@@ -1,0 +1,28 @@
+.item {
+    padding: 15px;
+    height: 450px;
+    text-align: center;
+    margin-top: 15px;
+    animation: movebottom 2s ease-out;
+}
+@keyframes movebottom {
+0%{
+    opacity: 0;
+    transform: translatey(30px);
+}
+100%{
+    opacity: 1;
+    transform: translatey(0)
+}
+}  
+
+
+.data-blog {
+    width: 100%;
+}
+.modal-body img{
+    width: 100%;
+}
+.data-blog img:hover{
+    border: inset 1px orange;
+}

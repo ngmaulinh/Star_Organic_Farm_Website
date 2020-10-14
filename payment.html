@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Organic</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/payment.js"></script>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/payment.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <!-- <div class="preloader loader" style="display: block; background:#f2f2f2;"> <img src="images/loader.gif"  alt="#"/></div> -->
+  <!-- header -->
+  <header>
+    <!-- phone number -->
+    <div class="container">
+      <div class="header-inner">
+        <div class="col-sm-4 col-xs-6 header-left">
+          <div class="shipping">
+            <div class="shipping-img"></div>
+            <div class="shipping-text">+91(000)1234-1234<span class="shipping-detail">Week From 9:00am To 7:00pm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- logo -->
+        <div class="col-sm-4 col-xs-12 header-middle">
+          <div class="header-middle-top">
+            <div id="logo"> <a href="index.html"><img src="images/logo.png" title="E-Commerce" alt="E-Commerce"
+                  class="img-responsive" style="height: 100px;" /></a> </div>
+          </div>
+        </div>
+
+        <!-- Shopping cart -->
+        <div class="col-sm-3 col-xs-12 col-sm-push-1 header-right">
+          <a href="payment.html">
+            <div id="cart" class="btn-group btn-block">
+              <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-dropdown-button"> <span
+                  id="cart-total"><span class="cart-title">Shopping Cart</span><br>
+                  Pay now!</span> </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- navbar -->
+  <nav id="menu" class="navbar">
+    <div class="nav-inner container">
+      <div class="navbar-header"><span id="category" class="visible-xs">Categories</span>
+        <button type="button" class="btn btn-navbar navbar-toggle"><i class="fa fa-bars"></i></button>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="main-navigation">
+          <li><a href="index.html" class="parent">Home</a> </li>
+          <li><a href="products.html" class="active parent">PRODUCTS</a>
+            <ul>
+              <li><a href="products.html">NUTRITIOUS CEREALS</a></li>
+              <li><a href="products.html">WHEAT & RICE</a></li>
+              <li><a href="products.html">SPICES & CONDIMENTS</a></li>
+              <li><a href="products.html">OILS</a></li>
+              <li><a href="products.html">FRUIT PULPS</a></li>
+              <li><a href="products.html">PULSE & AGRO</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html" class="parent">BLOG</a> </li>
+          <li><a href="FAQs.html" class="parent">FAQ</a> </li>
+          <li><a href="contact.html" class="parent">CONTACT US</a> </li>
+          <li><a href="payment.html" class="parent">PAYMENT</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- payment -->
+  <div class="container">
+    <h2>Your Detailed Orders</h2>
+    <hr>
+    <table class="table table-hover table-striped">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+          <th class="number">Price</th>
+          <th class="number">Quantity</th>
+          <th class="number">Amount</th>
+        </tr>
+      </thead>
+      <!-- cart items -->
+      <tbody id="cartItem">
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- total amount -->
+          <th colspan="4" style="text-align: right">Total Amount: </td>
+          <td class="number" style="font-weight: bold;">$<span id="cartTotal">0</span></td>
+
+        </tr>
+        <tr>
+          <th colspan="5" style="text-align: right">
+            <input type="button" class="btn btn-danger" value="Remove all" id="removeAll">
+            <br>
+            <input type="button" class="btn btn-info" value="Checkout" id="checkout">
+            <input type="button" class="btn btn-info" value=" Continue shopping" id="shopping">
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- confirm -->
+    <div id="confirm">
+      <h3>We are here for you !</h3>
+      <p>Please complete and submit the following form.</p>
+      <form action="" id="form-checkout" method="GET">
+        <div class="form-group">
+          <input type="text" name="txtName" required placeholder="Name" class="form-control" value="fpt-aptech">
+        </div>
+        <div class="form-group">
+          <input type="text" name="txtAdd" required placeholder="Address" class="form-control" value="590 CMT8 HCMC">
+        </div>
+        <div class="form-group">
+          <input type="text" name="txtEmail" required placeholder="Email" class="form-control" value="abc@aptech.com">
+        </div>
+        <div class="form-group">
+          <input type="text" name="txtPhone" required placeholder="Phone" class="form-control" value="123-456-999">
+        </div>
+        <div class="form-group">
+          <textarea name="txtNote" class="form-control" rows="5" placeholder="Comments"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" class="btn btn-success">
+          <input type="reset" value="Reset" class="btn btn-danger">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-top-at">
+
+          <div class="col-md-4 amet-sed">
+            <h4>MORE INFO</h4>
+            <ul class="nav-bottom">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faqs.html">FAQ</a></li>
+              <li><a href="payment.html">Payment</a></li>
+            </ul>
+          </div>
+          <!-- media social contact -->
+          <div class="col-md-4 amet-sed ">
+            <h4>CONTACT US</h4>
+            <p>Feel free to call us </p>
+            <p>in office time: +079 779 9702</p>
+            <p>Or give us message through </p>
+            <ul class="social">
+              <li><a href="https://www.facebook.com/"><i> </i></a></li>
+              <li><a href="https://twitter.com/"><i class="twitter"> </i></a></li>
+              <li><a href="https://mail.google.com/"><i class="rss"> </i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="gmail"> </i></a></li>
+            </ul>
+          </div>
+          <!-- subscribe -->
+          <div class="col-md-4 amet-sed">
+            <h4>Newsletter</h4>
+            <p>Sign Up to get all news update and promo</p>
+            <form>
+              <input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+              <input type="submit" value="Sign up">
+            </form>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    $("#shopping").on("click", function () {
+      window.location = "products.html";
+    });
+
+    $("#removeAll").on("click", function () {
+      localStorage.removeItem("cart");
+      $("#cartItem").empty();
+      $("#cartTotal").html(0);
+
+    });
+
+    $("#checkout").on("click", function () {
+      if (localStorage.getItem("cart") != null) {
+        $("#confirm").show();
+      }
+      else{alert("Add item to your cart, please!")}
+    });
+
+    $("#form-checkout").on("submit", function () {
+      alert("Your order have been made! \nThank you very much!");
+      $("#confirm").hide();
+      localStorage.removeItem("cart");
+    });
+  </script>
+
+</body>
+
+</html>

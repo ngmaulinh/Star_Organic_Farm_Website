@@ -1,0 +1,93 @@
+body {
+    background: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #000; }
+  
+   h2 {
+    color: #000; }
+  
+  .btn {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .2em; }
+    .btn.btn-primary {
+      color: #fff;
+      border-width: 2px; }
+      .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+        border-color: #ffce3a;
+        background: #ffce3a; }
+    .btn.btn-sm {
+      font-size: 12px; }
+    .btn.btn-outline-primary {
+      border-width: 2px;
+      color: #ffc107; }
+      .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active {
+        color: #fff; }
+    .btn.btn-outline-white {
+      border-width: 2px;
+      border-color: #fff;
+      color: #fff; }
+      .btn.btn-outline-white:hover, .btn.btn-outline-white:focus {
+        background: #fff;
+        color: #000;
+        border-width: 2px; }
+    .btn:hover {
+      text-decoration: none; }
+
+       .btn.btn-primary:hover{
+          
+          border: thin #1c2630 solid;
+          opacity: 70%;
+          color:#1c2630 ;
+          font-weight: bold;
+        }
+  
+  
+  button {
+    margin-bottom: 2em;
+    /* width: 100%; */
+  }
+  .answer p{
+  text-align: justify;
+  }
+  .btn.btn-secondary{
+  background-color:#FFFF99;
+  /* opacity: 70%; */
+  color: #000;
+  width: 100%;
+  }
+  .btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus {
+  background: #FFFFCC; 
+  font-weight: bold;
+  }
+  
+  #answer2,
+  #answer3,
+  #answer4,
+  #answer5,
+  #answer6,
+  #answer7,
+  #answer8,
+  #answer9,
+  #answer10,
+  #answer11,
+  #answer12,
+  #answer13,
+  #answer14,
+  #answer15,
+  #answer16
+  {
+      display: none;
+      margin-top: 1em;
+      margin-bottom: 1em;
+  }
+
+  #faqs{
+    padding: 2rem 0;
+  }
+  .faqsImg img{
+    width: 100%;
+  }

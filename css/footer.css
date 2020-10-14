@@ -1,0 +1,116 @@
+/*--footer--*/
+.footer ul{
+	padding: 0;
+	margin: 0;	
+}
+.footer{
+	background:#141414;
+}
+.amet-sed h4{
+	font-size: 1.5em;
+  	color: #fff;
+  	font-family: 'Lato', sans-serif;
+	margin: 0 0 1em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.footer-top-at {
+  padding: 4em 0;
+}
+ ul.nav-bottom li{
+	list-style:none;
+}
+ul.nav-bottom li  a{
+	text-decoration:none;
+	color:#989696;
+	font-size:1.1em;
+	display: inline-block;
+	margin: 0.2em 0;
+}
+ul.nav-bottom li  a:hover{
+	color:#EF5F21;
+	transition: 0.5s all;
+}
+.amet-sed p{
+	color:#989696;
+	font-size: 1.2em;
+	margin: 0 0 0.3em;
+}
+
+.footer-class  p{
+	color:#fff;
+	font-size:1.2em;
+
+}
+.footer-class  p a{
+	color:#EF5F21;
+	text-decoration:none;
+}
+.footer-class  p a:hover{
+	color:#fff;
+}
+.footer-class {
+	padding: 1.5em 0;
+	text-align:center;
+	background:#000;
+}
+.amet-sed form{
+	padding:1em 0 0;
+}
+.amet-sed input[type="text"], .amet-sed input[type="submit"] {
+	width: 69%;
+	padding: 0.5em;
+	outline: none;
+	color: #000;
+	font-size: 1em;
+	background: #fff;
+	border: none;
+ }
+ .amet-sed input[type="submit"] {
+	width: 20%;
+	color: #FFF;
+	font-size: 1em;
+	background:#EF5F21;
+	border: none;
+	outline:none;
+	padding: 0.5em;
+}
+.amet-sed input[type="submit"]:hover {
+	background: #fff;
+	color:#EF5F21;
+}
+ul.social{
+	padding:1em 0 0;
+}
+ul.social li{
+	display: inline-block;	
+}
+ul.social li i{
+	background: url(../images/img-sprite.png)no-repeat -9px -14px ;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px 0 0;
+}
+ul.social li  i.twitter{
+	background-position:  -43px -14px;
+}
+ul.social li  i.rss{
+	background-position: -77px -14px;
+}
+ul.social li  i.gmail{
+	background-position:-110px -14px;
+}
+ul.social li i:hover{
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}

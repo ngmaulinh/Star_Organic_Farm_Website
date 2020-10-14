@@ -1,0 +1,12 @@
+.number {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+#confirm {
+    width: 50%;
+    margin: auto;
+    padding: 2em;
+    display: none;
+    border: lightslategray medium solid;
+}

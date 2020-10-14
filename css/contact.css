@@ -1,0 +1,134 @@
+* {
+box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type=submit] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: pink;
+}
+
+/* Style the container/contact section */
+#contact {
+border-radius: 5px;
+padding: 10px;
+animation: movebottom 2s ease-out;
+}
+
+
+@keyframes movebottom {
+0% {
+opacity: 0;
+transform: translatey(30px);
+}
+
+100% {
+opacity: 1;
+transform: translatey(0)
+}
+}
+
+h2 {
+text-align: center;
+}
+
+/* Create two columns that float next to eachother */
+
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead
+of next to each other */
+@media screen and (max-width: 600px) {
+
+.column,
+input[type=submit] {
+width: 100%;
+margin-top: 0;
+}
+}
+
+span {
+width: 450px;
+}
+
+h2 {
+font-size: 24px;
+text-transform: uppercase;
+color: #303030;
+font-weight: 600;
+margin: 0;
+padding-top: 1rem;
+margin-bottom: 30px;
+}
+
+h4 {
+font-size: 19px;
+line-height: 1.375em;
+color: #303030;
+font-weight: 400;
+margin-bottom: 30px;
+}
+#services h4{
+  font-weight: 500;
+}
+
+.logo-small {
+
+color: greenyellow;
+font-size: 50px;
+}
+
+.logo {
+padding-top: 10rem;
+color: greenyellow;
+font-size: 250px;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+background-image: none;
+color: #f4511e;
+}
+#myCarousel{
+  background-color: lightblue; 
+  width: 100%; 
+  height: 20rem;
+}
+
+#contact{
+animation: movebottom 2s ease-out;
+}
+@keyframes movebottom {
+  0%{
+      opacity: 0;
+      transform: translatey(30px);
+  }
+  100%{
+      opacity: 1;
+      transform: translatey(0)
+  }
+}
